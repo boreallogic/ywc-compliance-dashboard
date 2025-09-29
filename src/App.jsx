@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 import CSVUpload from './components/CSVUpload';
-import SummaryStats from './components/SummaryStats';
-import TierProgress from './components/TierProgress';
-import TrendChart from './components/TrendChart';
-import FilterPanel from './components/FilterPanel';
+import IndicatorReporting from './components/IndicatorReporting';
 import IndicatorList from './components/IndicatorList';
 import ReportGenerator from './components/ReportGenerator';
 import { saveIndicators, loadIndicators, saveQuarterlyData, loadQuarters } from './utils/storage';
@@ -21,7 +18,7 @@ function App() {
     priority: 'all',
     search: ''
   });
-  const [currentView, setCurrentView] = useState('dashboard');
+  const [currentView, setCurrentView] = useState('reporting');
   const [notification, setNotification] = useState(null);
 
   // Load data on mount
@@ -49,7 +46,7 @@ function App() {
     saveQuarterlyData(quarter, year, result.data);
     
     showNotification('success', `Successfully loaded ${result.data.length} indicators!`);
-    setCurrentView('dashboard');
+    setCurrentView('reporting');
   };
 
   const handleUploadError = (errors) => {
@@ -139,11 +136,10 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex space-x-8">
               {[
-                { id: 'dashboard', label: 'Dashboard', icon: '📊' },
-                { id: 'indicators', label: 'Indicators', icon: '📋' },
-                { id: 'trends', label: 'Trends', icon: '📈' },
-                { id: 'reports', label: 'Reports', icon: '📄' },
-                { id: 'upload', label: 'Upload New Data', icon: '⬆️' }
+                { id: 'reporting', label: 'Report on Indicators', icon: '✍️' },
+                { id: 'indicators', label: 'View All Indicators', icon: '📋' },
+                { id: 'reports', label: 'Generate Reports', icon: '📄' },
+                { id: 'upload', label: 'Upload New Workplan', icon: '⬆️' }
               ].map(nav => (
                 <button
                   key={nav.id}
@@ -171,10 +167,11 @@ function App() {
           // Upload View (Initial State)
           <div className="max-w-3xl mx-auto">
             <div className="card mb-6">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to YWC Dashboard</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to YWC Reporting Portal</h2>
               <p className="text-gray-600 mb-6">
-                Upload your CSV file to get started. This dashboard will help you track, analyze,
-                and report on your GBV prevention indicators across all tiers.
+                Upload your workplan CSV file to get started. This portal will guide you through 
+                reporting on your organization's selected indicators in a clean, organized way - 
+                no more messy Word documents!
               </p>
             </div>
             <CSVUpload
@@ -185,78 +182,29 @@ function App() {
         ) : (
           // Main Dashboard Views
           <>
-            {currentView === 'dashboard' && (
-              <div className="space-y-6">
-                <SummaryStats indicators={indicators} />
-                <TierProgress indicators={indicators} />
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  <div className="lg:col-span-2">
-                    <TrendChart />
-                  </div>
-                  <div>
-                    <FilterPanel
-                      indicators={indicators}
-                      filters={filters}
-                      onFilterChange={handleFilterChange}
-                    />
-                  </div>
-                </div>
-              </div>
+            {currentView === 'reporting' && (
+              <IndicatorReporting indicators={indicators} />
             )}
 
             {currentView === 'indicators' && (
-              <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                <div>
-                  <FilterPanel
-                    indicators={indicators}
-                    filters={filters}
-                    onFilterChange={handleFilterChange}
-                  />
-                </div>
-                <div className="lg:col-span-3">
-                  <IndicatorList indicators={filteredIndicators} />
-                </div>
-              </div>
-            )}
-
-            {currentView === 'trends' && (
-              <div className="space-y-6">
-                <div className="card">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Trend Analysis</h2>
-                  <p className="text-gray-600">
-                    Track indicator changes across quarters to identify patterns and progress.
-                  </p>
-                </div>
-                <TrendChart />
-              </div>
+              <IndicatorList indicators={indicators} />
             )}
 
             {currentView === 'reports' && (
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div className="lg:col-span-2">
-                  <ReportGenerator indicators={filteredIndicators} filters={filters} />
-                </div>
-                <div>
-                  <FilterPanel
-                    indicators={indicators}
-                    filters={filters}
-                    onFilterChange={handleFilterChange}
-                  />
-                </div>
-              </div>
+              <ReportGenerator indicators={indicators} />
             )}
 
             {currentView === 'upload' && (
               <div className="max-w-3xl mx-auto">
                 <div className="card mb-6">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Upload New Data</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Upload New Workplan</h2>
                   <p className="text-gray-600 mb-4">
-                    Upload a new CSV file to replace your current data or add quarterly data.
+                    Upload a new workplan CSV file from the YWC Workplan Builder to replace your current indicators.
                   </p>
                   <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
                     <p className="text-sm text-yellow-800">
-                      <strong>Note:</strong> Uploading new data will replace your current dataset.
-                      Historical quarterly data will be preserved in the Trends view.
+                      <strong>Note:</strong> Uploading new data will replace your current workplan. 
+                      Make sure to export any completed reporting before uploading a new file.
                     </p>
                   </div>
                 </div>

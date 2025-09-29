@@ -1,0 +1,186 @@
+indicator_name,description,measurement_methods,pillar,source,compliance_critical
+Workforce Capacity - Filled Staff Positions,"Measures workforce stability by tracking how many permanent and casual staff positions are actively filled, offering insight into organizational capacity and challenges in recruitment or retention across the sector.","How many permanent staff positions (FTE, PTE) does your organization have budgeted?
+
+How many of these positions are currently filled?
+
+Over the past year, how difficult has it been to recruit or retain permanent staff?
+Options: Not difficult / Somewhat difficult / Very difficult / We did not hire.",Pillar 5,Internal,FALSE
+Staff Retention - Annual Turnover Rate,"Tracks how consistently organizations are able to retain staff over time. Strong retention supports continuity, team cohesion, and organizational resilience, while elevated turnover may signal opportunities to strengthen workforce supports or stability.",What was your organization's staff turnover percentage in the reporting period? (Calculate: [Number of staff who left ÷ Average number of staff] × 100),Pillar 1,Internal,FALSE
+Workforce Wellness - Presence of Benefits and Employee Support Programs,"Captures whether organizations have formal structures in place to support employee wellbeing and retention, such as benefits packages, RRSP contributions, and wellness programs. These supports promote a healthy, sustainable workforce and signal organizational commitment to staff care.","Does your organization have a formal employee wellness and benefits package? (Yes/No)
+
+Which of the following does your organization provide to permanent staff? (Check all that apply):
+☐ Health and/or dental insurance
+☐ Employee Assistance Program (EAP)
+☐ Paid mental health or self-care days
+☐ RRSP matching or retirement savings program
+☐ Paid professional development time or funds
+☐ Other (please specify)
+",Pillar 1,Internal,FALSE
+Organizational Resilience - Succession and Staff Development,"Assesses whether organizations have formal plans and practices in place to support leadership transitions and develop internal talent. Succession planning and mentorship programs help build future leaders, strengthen institutional memory, and support a resilient and adaptive workforce.","Does your organization have a documented plan or process for succession in key leadership roles? (Yes/No)
+
+Does your organization actively support staff development through mentoring, coaching, or skill-transfer activities? (Yes/No)
+
+(Optional) If yes, how many staff participated in mentoring or leadership development activities in the past year?",Pillar 1,Internal,FALSE
+Funding Stability - Core vs. Non-Core Ratio,"Evaluates the balance between stable core funding and project-based funding to better understand organizational sustainability and financial flexibility. A healthy ratio supports long-term planning, reduces reliance on short-term funding cycles, and strengthens the organization’s ability to respond to emerging needs.","What was your organization’s total core funding during the reporting period?
+(Include all undesignated or operations-level funds)
+
+What was your total project- or program-specific (non-core) funding during the same period?
+
+(Optional) Does your organization have a written strategy for securing core or stable funding? (Yes/No)
+
+From Q1 and Q2, funders/analysts can calculate:
+
+Funding leverage ratio (non-core ÷ core)
+
+Core-to-total ratio (core ÷ total)
+These show both dependency and flexibility.",Pillar 5,Internal,FALSE
+Financial Governance - Shared Financial Standards,"Supports sector-wide transparency and accountability by tracking whether organizations are contributing to and implementing shared financial reporting and bookkeeping standards. This promotes consistency, strengthens financial governance, and enhances collective capacity for coordination and oversight.
+
+
+
+
+
+
+
+
+
+","Phase 1: Development of Shared Financial Reporting Standards
+Indicator Name:
+Financial Governance – Development of Shared Financial Reporting Practices
+
+Work Plan Activity:
+
+Participate in the co-development of shared financial reporting and bookkeeping practices within the coalition.
+
+Reporting Questions:
+
+Has your organization contributed to any coalition-led discussions or working groups on financial reporting practices? (Yes/No)
+
+Would your organization be interested in contributing to the development of shared financial standards? (Yes/No)
+
+What aspects of financial reporting does your organization think should be standardized across the sector? (Open-ended)
+
+Phase 2: Implementation and Alignment
+Indicator Name:
+Financial Governance – Implementation of Shared Financial Standards
+
+Work Plan Activity:
+
+Adopt or align organizational financial reporting and bookkeeping practices with coalition-developed standards.
+
+Reporting Questions:
+
+Has your organization adopted or aligned its financial reporting practices with the shared standards developed by the coalition? (Yes/No)
+
+Which of the following practices has your organization implemented? (Check all that apply)
+☐ Use of shared chart of accounts or expense categories
+☐ Consistent quarterly financial reporting
+☐ Financial policy manual aligned with coalition templates
+☐ Staff or board attended training on coalition standards
+☐ Other (please specify)",Pillar 5,Internal,FALSE
+Governance Transparency - Board Compensation Standards,"Tracks whether organizations follow consistent, transparent practices for compensating board members. Clear standards and disclosure support good governance, ensure accountability to the public and funders, and promote equitable participation on boards.","Does your organization compensate board members? (Yes/No)
+(If “Yes,” proceed to the following questions)
+
+What forms of compensation does your organization provide to board members? (Check all that apply):
+☐ Per-meeting stipend
+☐ Monthly or annual honorarium
+☐ Travel reimbursement (e.g., mileage, lodging, per diems)
+☐ Childcare reimbursement
+☐ Gift cards or tokens of appreciation
+☐ Other (please specify)
+
+Does your organization have a documented board compensation policy? (Yes/No)
+
+Is board compensation publicly disclosed (e.g., in annual reports, AGM, or audited financials)? (Yes/No)",Pillar 5,Internal,FALSE
+Financial Transparency - Disclosure of Contractor and Board Compensation,"Assesses whether organizations publicly report payments to contractors, consultants, and board members. Transparent reporting builds trust with funders and communities, reinforces sector accountability, and supports responsible financial stewardship.","Does your organization disclose payments made to external contractors or consultants? (Yes/No)
+
+Where is this information disclosed? (Check all that apply)
+☐ Annual report
+☐ AGM documents
+☐ Audited financials
+☐ Website
+☐ Other (please specify)
+
+(Optional) What were your total expenditures on external professional services (e.g., consultants, evaluators, legal, accounting) in the past fiscal year?",Pillar 5,Internal,FALSE
+Financial Oversight - Annual Audits or Reviews,"Tracks whether organizations complete regular financial audits or reviews to support transparency, fiscal responsibility, and compliance. Regular financial oversight strengthens funder and community trust, identifies opportunities for improvement, and promotes strong financial governance across the sector.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+","Did your organization undergo an external financial audit or financial review during the last fiscal year?
+(Yes / No)
+
+If Yes:
+What type of financial oversight did your organization complete? (Select one):
+☐ Full financial audit (by external auditor)
+☐ Financial review engagement (by external accountant)
+☐ Internal financial review by board or finance committee
+☐ Other (please specify)
+
+Were any issues or recommendations identified in the review or audit? (Yes / No)
+
+Has your organization taken steps to address any issues or recommendations? (Yes / No)
+
+If No:
+Why did your organization not complete a financial audit or review? (Check all that apply):
+☐ Organization was not required to (e.g., legal or funder threshold not met)
+☐ Lack of capacity or funding
+☐ No formal process currently in place
+☐ Other (please specify)
+
+Does your organization plan to implement a formal financial review or audit process in the next fiscal year? (Yes / No / Not sure)",Pillar 6,Internal,FALSE
+Capacity Building in GBV Sector,"Engagement and collaboration among Yukon Women's Coalition members and 2SLGBTQIA+ organizations to address gaps and improve GBV services
+
+
+
+
+","Collaborative Relationships
+Did your organization collaborate with other Yukon Women’s Coalition member organizations during the reporting period?
+(Yes/No)
+
+Did your organization collaborate with any 2SLGBTQIA+ organizations or groups during the reporting period?
+(Yes/No)
+
+(If “Yes” to either of the above, continue with the following):
+
+What forms of collaboration did your organization engage in? (Check all that apply):
+☐ Co-delivered programming or services
+☐ Joint funding proposals or reports
+☐ Shared advocacy or policy initiatives
+☐ Attended shared events or working groups
+☐ Regular coordination or planning
+☐ Resource sharing (e.g., space, staff time, tools)
+☐ Other (please specify)
+
+What was the focus of these collaborations? (Check all that apply):
+☐ Service coordination
+☐ Addressing specific service gaps
+☐ Improving inclusion or accessibility
+☐ Supporting 2SLGBTQIA+ survivors
+☐ Strengthening coalition relationships
+☐ Other (please specify)
+
+Coalition Participation and Contribution
+How many Yukon Women’s Coalition meetings, events, or working groups did your organization participate in during the reporting period?
+(Enter number – include regular meetings, retreats, events, working groups)
+
+In what ways did your organization contribute to coalition-wide work beyond your own service delivery? (Check all that apply):
+☐ Participated in working groups or planning tables
+☐ Contributed time or staff to shared initiatives
+☐ Shared internal resources (e.g., policies, tools)
+☐ Supported coordination or administration of coalition efforts
+☐ Other (please specify)",Pillar 5,External,TRUE

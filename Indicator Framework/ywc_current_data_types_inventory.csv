@@ -1,0 +1,51 @@
+data_type_id,data_name,category,typical_frequency,collection_burden,funders_requiring,organizations_collecting,strategic_value,nap_alignment
+D001,Board meeting minutes,Operational,Monthly,Low,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates governance accountability and organizational stability,Pillar 5 - Social Infrastructure
+D002,Number of board meetings held,Operational,Monthly,Low,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows active governance and organizational oversight,Pillar 5 - Social Infrastructure
+D003,Staff turnover rate,Operational,Quarterly,Medium,"YG-WGED, YG-HSS, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Indicates organizational stability and workforce health,Pillar 5 - Social Infrastructure
+D004,Number of weekly drop-in users,Service Delivery,Weekly,Medium,"YG-WGED, YG-HSS","VFWC, Les EssentiElles",Shows service accessibility and community engagement,Pillar 1 - Support for Survivors
+D005,Crisis interventions count,Service Delivery,Monthly,High,YG-HSS,DWS,Demonstrates crisis response capacity and service demand,Pillar 1 - Support for Survivors
+D006,Number of shelter bed nights,Service Delivery,Daily,High,YG-HSS,DWS,Shows housing support provided to survivors,Pillar 1 - Support for Survivors
+D007,Crisis line calls handled,Service Delivery,Monthly,Medium,YG-HSS,DWS,Indicates accessibility of crisis support services,Pillar 1 - Support for Survivors
+D008,Safety planning instances,Service Delivery,Monthly,High,YG-HSS,DWS,Demonstrates proactive safety intervention work,Pillar 1 - Support for Survivors
+D009,Program participation numbers,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows program engagement and community reach,Pillar 2 - Prevention
+D010,Workshop attendance numbers,Service Delivery,Monthly,Low,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates education and prevention activities,Pillar 2 - Prevention
+D011,Referral numbers to other services,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows coordination and system navigation support,Pillar 1 - Support for Survivors
+D012,Client feedback survey results,Impact/Outcomes,Quarterly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Indicates service quality and user satisfaction,Pillar 1 - Support for Survivors
+D013,Financial audit results,Operational,Annual,High,"YG-WGED, YG-HSS, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates financial accountability and transparency,Pillar 5 - Social Infrastructure
+D014,Quarterly financial statements,Operational,Quarterly,Medium,"YG-WGED, YG-HSS, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows financial stability and proper fund management,Pillar 5 - Social Infrastructure
+D015,Board attendance tracking,Operational,Monthly,Low,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Indicates active governance participation,Pillar 5 - Social Infrastructure
+D016,Staff training hours completed,Operational,Quarterly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows capacity building and professional development,Pillar 5 - Social Infrastructure
+D017,Partnership MOUs signed,Systems/Partnerships,Annual,Medium,"YG-WGED, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates collaboration and system coordination,Pillar 5 - Social Infrastructure
+D018,Media appearances and interviews,Impact/Outcomes,Monthly,Low,"YG-WGED, YG-HSS","YAWC, VFWC, YSWC",Shows public awareness and advocacy activities,Pillar 2 - Prevention
+D019,Social media engagement metrics,Impact/Outcomes,Monthly,Low,"YG-WGED, YG-HSS","YAWC, VFWC, YSWC, YWITT",Indicates community outreach and education effectiveness,Pillar 2 - Prevention
+D020,Policy consultation submissions,Impact/Outcomes,Quarterly,High,"YG-WGED, Federal","YAWC, YSWC",Demonstrates policy influence and systems change work,Pillar 5 - Social Infrastructure
+D021,New clients served,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows service expansion and community reach,Pillar 1 - Support for Survivors
+D022,Total clients served,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates overall service capacity and impact,Pillar 1 - Support for Survivors
+D023,Funding partnerships secured,Systems/Partnerships,Quarterly,High,"YG-WGED, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows financial sustainability and diversification,Pillar 5 - Social Infrastructure
+D024,Community committee participation,Systems/Partnerships,Quarterly,Medium,"YG-WGED, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates community leadership and collaboration,Pillar 5 - Social Infrastructure
+D025,Cultural ceremonies provided,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, WAWC",Shows culturally safe and Indigenous-led services,Pillar 4 - Indigenous Leadership
+D026,Elder involvement in programs,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, WAWC",Demonstrates cultural integration in healing approaches,Pillar 4 - Indigenous Leadership
+D027,Youth program participation,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, YWITT",Shows prevention and education with young people,Pillar 2 - Prevention
+D028,Bursaries and scholarships awarded,Service Delivery,Annual,Medium,"YG-WGED, YG-HSS",YWITT,Demonstrates economic empowerment support,Pillar 1 - Support for Survivors
+D029,Workplace safety training delivered,Service Delivery,Quarterly,Medium,"YG-WGED, YG-HSS",YWITT,Shows prevention education in workplace settings,Pillar 2 - Prevention
+D030,Drop-in service usage statistics,Service Delivery,Daily,High,"YG-WGED, YG-HSS","VFWC, Les EssentiElles",Demonstrates barrier-free service accessibility,Pillar 1 - Support for Survivors
+D031,Self-advocacy support instances,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","VFWC, Les EssentiElles",Shows empowerment and capacity building support,Pillar 1 - Support for Survivors
+D032,Gender-based analysis training,Impact/Outcomes,Quarterly,Medium,"YG-WGED, Federal","VFWC, YSWC",Demonstrates prevention education and system change,Pillar 2 - Prevention
+D033,Research collaborations completed,Impact/Outcomes,Annual,High,"YG-WGED, Federal","YAWC, YSWC",Shows evidence-based practice and knowledge creation,Pillar 5 - Social Infrastructure
+D034,Policy changes influenced,Impact/Outcomes,Annual,High,"YG-WGED, Federal","YAWC, YSWC",Demonstrates systems change and advocacy effectiveness,Pillar 5 - Social Infrastructure
+D035,Campaign reach and engagement,Impact/Outcomes,Quarterly,Medium,"YG-WGED, YG-HSS","VFWC, YSWC",Shows public awareness and prevention activities,Pillar 2 - Prevention
+D036,User-driven initiatives supported,Service Delivery,Monthly,Low,"YG-WGED, YG-HSS","VFWC, Les EssentiElles",Demonstrates empowerment and community leadership,Pillar 1 - Support for Survivors
+D037,Francophone service provision,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS",Les EssentiElles,Shows linguistic accessibility and cultural competence,Pillar 1 - Support for Survivors
+D038,Prenatal program participation,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS",Les EssentiElles,Demonstrates prevention and family support services,Pillar 2 - Prevention
+D039,Professional service engagements,Operational,Quarterly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows organizational capacity and sustainability,Pillar 5 - Social Infrastructure
+D040,Travel for conferences and meetings,Operational,Quarterly,Low,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates professional development and networking,Pillar 5 - Social Infrastructure
+D041,Website and resource downloads,Impact/Outcomes,Monthly,Low,"YG-WGED, YG-HSS","YAWC, VFWC, YSWC, YWITT",Shows information sharing and public education reach,Pillar 2 - Prevention
+D042,Volunteer coordination and hours,Operational,Monthly,Medium,"YG-WGED, YG-HSS","VFWC, Les EssentiElles",Demonstrates community engagement and capacity,Pillar 5 - Social Infrastructure
+D043,Collaborative program development,Systems/Partnerships,Quarterly,High,"YG-WGED, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows sector coordination and resource sharing,Pillar 5 - Social Infrastructure
+D044,Emergency housing placements,Service Delivery,Monthly,High,YG-HSS,"VFWC, DWS",Demonstrates crisis response and housing support,Pillar 1 - Support for Survivors
+D045,Legal advocacy support provided,Service Delivery,Monthly,High,YG-HSS,"VFWC, DWS",Shows system navigation and justice support,Pillar 3 - Responsive Justice System
+D046,Incident reports filed,Service Delivery,Monthly,High,YG-HSS,DWS,Demonstrates safety monitoring and accountability,Pillar 1 - Support for Survivors
+D047,Follow-up support contacts,Service Delivery,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows continuity of care and relationship building,Pillar 1 - Support for Survivors
+D048,Community education events held,Impact/Outcomes,Monthly,Medium,"YG-WGED, YG-HSS","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates prevention and awareness activities,Pillar 2 - Prevention
+D049,Grant applications submitted,Operational,Quarterly,High,"YG-WGED, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Shows resource development and sustainability efforts,Pillar 5 - Social Infrastructure
+D050,Successful grant acquisitions,Operational,Quarterly,High,"YG-WGED, Federal","LAWS, YAWC, VFWC, WAWC, YSWC, Les EssentiElles, YWITT",Demonstrates funding success and sustainability,Pillar 5 - Social Infrastructure
