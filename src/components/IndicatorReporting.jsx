@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import SmartFormField from './SmartFormField';
 
 const IndicatorReporting = ({ indicators, onUpdateProgress }) => {
   const [reportingData, setReportingData] = useState({});
   const [currentIndicator, setCurrentIndicator] = useState(0);
+  
+  // Detect organization from first indicator
+  const organizationCode = indicators.length > 0 ? 
+    indicators[0].organization?.split(' ').map(word => word[0]).join('').toUpperCase() : 
+    'UNKNOWN';
 
   // Group indicators by tier for organized display
   const groupedIndicators = indicators.reduce((acc, indicator) => {
@@ -45,6 +51,23 @@ const IndicatorReporting = ({ indicators, onUpdateProgress }) => {
 
   return (
     <div className="space-y-6">
+      {/* Organization Header */}
+      {indicators.length > 0 && (
+        <div className="card border-l-4 border-l-purple-500 bg-purple-50">
+          <div className="flex items-center gap-3 mb-2">
+            <span className="text-sm font-medium text-purple-600 bg-purple-100 px-2 py-1 rounded">
+              {organizationCode}
+            </span>
+            <h3 className="text-lg font-semibold text-gray-900">
+              {indicators[0].organization}
+            </h3>
+          </div>
+          <p className="text-sm text-gray-600">
+            Reporting on {indicators.length} assigned indicators from your workplan
+          </p>
+        </div>
+      )}
+
       {/* Progress Overview */}
       <div className="card">
         <div className="flex justify-between items-center mb-4">
@@ -137,16 +160,15 @@ const IndicatorReportingCard = ({ indicator, data, onUpdate }) => {
             </div>
           )}
 
-          {/* Response Data */}
+          {/* Smart Response Field */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Response Data *
-            </label>
-            <textarea
+            <SmartFormField
+              indicator={indicator}
+              orgCode={organizationCode}
               value={data.responseData || ''}
-              onChange={(e) => onUpdate('responseData', e.target.value)}
+              onChange={(value) => onUpdate('responseData', value)}
+              label="Response Data *"
               placeholder="Enter your data, measurements, and responses for this indicator..."
-              className="input h-32"
             />
           </div>
 
