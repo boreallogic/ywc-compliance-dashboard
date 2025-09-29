@@ -1,0 +1,89 @@
+YWC Dashboard - Complete File Structure
+========================================
+
+ywc-dashboard/
+│
+├── 📄 Configuration Files
+│   ├── package.json              # Dependencies & scripts
+│   ├── vite.config.js            # Vite build configuration
+│   ├── tailwind.config.js        # Tailwind CSS customization
+│   ├── postcss.config.js         # PostCSS for Tailwind
+│   ├── netlify.toml              # Netlify deployment config
+│   ├── .gitignore                # Git ignore rules
+│   └── index.html                # HTML entry point
+│
+├── 📚 Documentation (4 files)
+│   ├── README.md                 # Technical documentation
+│   ├── QUICK_START.md            # Non-technical user guide
+│   ├── DEPLOYMENT.md             # Netlify deployment steps
+│   ├── SETUP_CHECKLIST.md        # Complete setup guide
+│   └── PROJECT_SUMMARY.md        # This project overview
+│
+├── 📊 Sample Data
+│   └── sample-data.csv           # Example CSV for testing
+│
+├── 📁 src/                       # Source code
+│   │
+│   ├── 🧩 components/            # React components (7 files)
+│   │   ├── CSVUpload.jsx         # File upload with drag-drop
+│   │   ├── FilterPanel.jsx       # Multi-level filtering
+│   │   ├── IndicatorList.jsx     # Paginated indicator display
+│   │   ├── ReportGenerator.jsx   # PDF/CSV export
+│   │   ├── SummaryStats.jsx      # Dashboard statistics cards
+│   │   ├── TierProgress.jsx      # Tier progress bars
+│   │   └── TrendChart.jsx        # Recharts visualizations
+│   │
+│   ├── 🛠️ utils/                 # Utility modules (4 files)
+│   │   ├── analytics.js          # Metrics calculations
+│   │   ├── csvParser.js          # CSV parsing & validation
+│   │   ├── pdfGenerator.js       # PDF report creation
+│   │   └── storage.js            # localStorage management
+│   │
+│   ├── 🎨 styles/
+│   │   └── index.css             # Tailwind + custom styles
+│   │
+│   ├── App.jsx                   # Main application component
+│   └── main.jsx                  # React entry point
+│
+└── 📁 public/                    # Static assets (empty, ready for logos)
+
+========================================
+Statistics:
+- Total files: 26
+- React components: 7
+- Utility modules: 4
+- Documentation: 5
+- Configuration: 7
+- Lines of code: ~3,500+
+========================================
+
+Key Features by File:
+---------------------
+CSVUpload.jsx       → Drag-drop, validation, error handling
+FilterPanel.jsx     → Type/tier/pillar/source/priority filters
+IndicatorList.jsx   → Expandable cards, pagination, search
+ReportGenerator.jsx → PDF generation, funder selection, CSV export
+SummaryStats.jsx    → Count cards, tier distribution
+TierProgress.jsx    → Visual progress bars for each tier
+TrendChart.jsx      → Line/bar charts for quarterly trends
+
+analytics.js        → Metrics, filtering, aggregations
+csvParser.js        → Parse, validate, normalize CSV data
+pdfGenerator.js     → jsPDF reports with tables and charts
+storage.js          → localStorage save/load/clear
+
+App.jsx             → State management, routing, layout
+main.jsx            → ReactDOM mounting
+index.css           → Tailwind config, custom utilities
+
+========================================
+Build Output (after npm run build):
+dist/
+├── index.html
+├── assets/
+│   ├── index-[hash].js   # Bundled JavaScript
+│   ├── index-[hash].css  # Bundled CSS
+│   └── ...               # Other assets
+
+This dist/ folder is what you deploy to Netlify!
+========================================
