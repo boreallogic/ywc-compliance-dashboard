@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 import CSVUpload from './components/CSVUpload';
 import SummaryStats from './components/SummaryStats';
@@ -151,7 +151,7 @@ function App() {
                   className={`
                     py-4 px-1 border-b-2 font-medium text-sm transition-colors
                     ${currentView === nav.id
-                      ? 'border-primary-600 text-primary-600'
+                      ? 'border-blue-600 text-blue-600'
                       : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                     }
                   `}
