@@ -15,30 +15,49 @@ const SmartFormField = ({
   const [showSuggestion, setShowSuggestion] = useState(false);
 
   useEffect(() => {
-    if (indicator?.measurementMethods) {
-      const type = getFieldType(indicator.measurementMethods);
-      setFieldType(type);
-      
-      if (type === 'checkbox' || type === 'radio') {
-        setOptions(extractOptions(indicator.measurementMethods));
+    try {
+      if (indicator?.measurementMethods) {
+        const type = getFieldType(indicator.measurementMethods);
+        setFieldType(type);
+        
+        if (type === 'checkbox' || type === 'radio') {
+          const extractedOptions = extractOptions(indicator.measurementMethods);
+          setOptions(extractedOptions || []);
+        }
       }
+    } catch (error) {
+      console.warn('Error processing indicator field type:', error);
+      setFieldType('textarea'); // Safe fallback
     }
   }, [indicator]);
 
   const handleSuggestionApply = () => {
-    const suggestion = getSuggestedResponse(orgCode, indicator.id, indicator.name);
-    onChange(suggestion);
+    try {
+      const suggestion = getSuggestedResponse(orgCode, indicator?.id || '', indicator?.name || '');
+      if (suggestion) {
+        onChange(suggestion);
+      }
+    } catch (error) {
+      console.warn('Error applying suggestion:', error);
+    }
     setShowSuggestion(false);
   };
 
   const handleCalculationInputChange = (key, inputValue) => {
-    const newInputs = { ...calculationInputs, [key]: parseFloat(inputValue) || 0 };
-    setCalculationInputs(newInputs);
-    
-    // Auto-calculate if we have the required inputs
-    const calculated = calculateValue(indicator.measurementMethods, newInputs);
-    if (calculated !== null) {
-      onChange(`Calculated result: ${calculated}${indicator.measurementMethods.includes('percentage') ? '%' : ''}`);
+    try {
+      const newInputs = { ...calculationInputs, [key]: parseFloat(inputValue) || 0 };
+      setCalculationInputs(newInputs);
+      
+      // Auto-calculate if we have the required inputs
+      if (indicator?.measurementMethods) {
+        const calculated = calculateValue(indicator.measurementMethods, newInputs);
+        if (calculated !== null) {
+          const unit = indicator.measurementMethods.includes('percentage') ? '%' : '';
+          onChange(`Calculated result: ${calculated}${unit}`);
+        }
+      }
+    } catch (error) {
+      console.warn('Error in calculation:', error);
     }
   };
 

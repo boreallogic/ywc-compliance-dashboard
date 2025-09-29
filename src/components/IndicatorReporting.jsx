@@ -6,8 +6,24 @@ const IndicatorReporting = ({ indicators, onUpdateProgress }) => {
   const [currentIndicator, setCurrentIndicator] = useState(0);
   
   // Detect organization from first indicator
+  const getOrganizationCode = (orgName) => {
+    if (!orgName) return 'UNKNOWN';
+    
+    // Handle known organizations
+    if (orgName.includes('Victoria Faulkner')) return 'VFWC';
+    if (orgName.includes('Whitehorse Aboriginal')) return 'WAWC';
+    if (orgName.includes('Yukon Status of Women')) return 'YSWC';
+    if (orgName.includes('Yukon Aboriginal Women')) return 'YAWC';
+    if (orgName.includes('Liard Aboriginal')) return 'LAWS';
+    if (orgName.includes('Yukon Women in Trades')) return 'YWITT';
+    if (orgName.includes('Les EssentiElles')) return 'Les EssentiElles';
+    
+    // Fallback: create acronym from first letters
+    return orgName.split(' ').map(word => word[0]).join('').toUpperCase();
+  };
+  
   const organizationCode = indicators.length > 0 ? 
-    indicators[0].organization?.split(' ').map(word => word[0]).join('').toUpperCase() : 
+    getOrganizationCode(indicators[0].organization) : 
     'UNKNOWN';
 
   // Group indicators by tier for organized display

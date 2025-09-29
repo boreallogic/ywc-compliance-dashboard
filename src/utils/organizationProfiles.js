@@ -106,27 +106,34 @@ export const extractOptions = (measurementMethod) => {
 
 // Get suggested response based on organization profile and indicator
 export const getSuggestedResponse = (orgCode, indicatorId, indicatorName) => {
-  const org = organizationProfiles[orgCode];
-  if (!org) return '';
-  
-  // Match response templates to indicator patterns
-  if (indicatorName.toLowerCase().includes('turnover') || indicatorName.toLowerCase().includes('retention')) {
-    return responseTemplates.staffRetention.template;
+  try {
+    const org = organizationProfiles[orgCode];
+    if (!org || !indicatorName) return '';
+    
+    const nameLower = indicatorName.toLowerCase();
+    
+    // Match response templates to indicator patterns
+    if (nameLower.includes('turnover') || nameLower.includes('retention')) {
+      return responseTemplates.staffRetention?.template || '';
+    }
+    
+    if (nameLower.includes('coalition') || nameLower.includes('collaboration')) {
+      return responseTemplates.coalitionParticipation?.template || '';
+    }
+    
+    if (nameLower.includes('funding') && nameLower.includes('ratio')) {
+      return responseTemplates.fundingRatio?.template || '';
+    }
+    
+    if (nameLower.includes('program') || nameLower.includes('service')) {
+      return responseTemplates.programParticipation?.template || '';
+    }
+    
+    return '';
+  } catch (error) {
+    console.warn('Error getting suggested response:', error);
+    return '';
   }
-  
-  if (indicatorName.toLowerCase().includes('coalition') || indicatorName.toLowerCase().includes('collaboration')) {
-    return responseTemplates.coalitionParticipation.template;
-  }
-  
-  if (indicatorName.toLowerCase().includes('funding') && indicatorName.toLowerCase().includes('ratio')) {
-    return responseTemplates.fundingRatio.template;
-  }
-  
-  if (indicatorName.toLowerCase().includes('program') || indicatorName.toLowerCase().includes('service')) {
-    return responseTemplates.programParticipation.template;
-  }
-  
-  return '';
 };
 
 // Auto-calculate common formulas
