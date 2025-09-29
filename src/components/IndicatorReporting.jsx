@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import SmartFormField from './SmartFormField';
 
 const IndicatorReporting = ({ indicators, onUpdateProgress }) => {
   const [reportingData, setReportingData] = useState({});
@@ -176,15 +175,16 @@ const IndicatorReportingCard = ({ indicator, data, onUpdate }) => {
             </div>
           )}
 
-          {/* Smart Response Field */}
+          {/* Response Data - Simplified for debugging */}
           <div>
-            <SmartFormField
-              indicator={indicator}
-              orgCode={organizationCode}
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Response Data *
+            </label>
+            <textarea
               value={data.responseData || ''}
-              onChange={(value) => onUpdate('responseData', value)}
-              label="Response Data *"
+              onChange={(e) => onUpdate('responseData', e.target.value)}
               placeholder="Enter your data, measurements, and responses for this indicator..."
+              className="input h-32"
             />
           </div>
 
